@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="asg5.css">
+    <title>Winter Wonderland</title>
+  </head>
+
+    <body>
+    
+    <canvas id="c"></canvas>
+    <p>Press the button if you enjoy Michael Buble Christmas songs :)
+      <button onclick="toggleplay()" type="button">Hell yeah</button>
+    </p>
+    
+    
+
+    </body>
+
+    
+    <audio id="music" src="../resources/winterwonderland.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+
+<script type="module" src="asg5.js"></script>
+<script>
+  var myMusic= document.getElementById("music");
+  myMusic.volume = 0.5;
+  playing = false;
+  function toggleplay() {
+    if(playing){
+      pause();
+    } 
+    else{
+      play();
+    }
+
+  }
+
+  function play(){
+  myMusic.play();
+  playing = true;
+  }
+  function pause() {
+  myMusic.pause();
+  playing = false;
+  }
+</script>
+</html>

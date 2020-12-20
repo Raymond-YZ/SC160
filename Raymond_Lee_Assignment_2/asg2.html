@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Penguins of Santa Cruz</title>
+  </head>
+
+  <body onload="main()" style="background-color:powderblue;">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+      <br>
+  
+ 
+  
+    <p> Canvas Color:
+    <br><button type="button" id="changeBackground">Change Canvas Color</button>
+    <br>
+    Red <input type="range" min="0" max="100" value="0" class="slider" id="redSlide">
+    Green <input type="range" min="0" max="100" value="100" class="slider" id="greenSlide">
+    Blue <input type="range" min="0" max="100" value="100" class="slider" id="blueSlide">
+    </p>
+    <h1 style="font-size:32px;">Penguin Controls:</h1>
+    <p> Penguin Color:
+    <br>
+    Red <input type="range" min="0" max="100" value="0" class="slider" id="redBodySlide">
+    Green <input type="range" min="0" max="100" value="0" class="slider" id="greenBodySlide">
+    Blue <input type="range" min="0" max="100" value="0" class="slider" id="blueBodySlide">
+    </p>
+
+    <p>     
+    <br>
+    Tail: <input type="range" min="0" max="30" value="0" class="slider" id="tailSlide">
+    <br>
+    Left Arm: <input type="range" min="0" max="40" value="0" class="slider" id="leftArmSlide">
+    Lower Left Arm: <input type="range" min="-10" max="10" value="0" class="slider" id="lowerLeftArmSlide">
+    Left Wing Tip: <input type="range" min="-5" max="5" value="0" class="slider" id="leftTipSlide">
+    <br>
+    Right Arm: <input type="range" min="0" max="40" value="0" class="slider" id="rightArmSlide">
+    Lower Right Arm: <input type="range" min="-10" max="10" value="0" class="slider" id="lowerRightArmSlide">
+    Right Wing Tip: <input type="range" min="-10" max="10" value="0" class="slider" id="rightTipSlide">
+    <br> 
+    Feet: <input type="range" min="-30" max="30" value="0" class="slider" id="feetSlide">
+    <br>
+    Beak: <input type="range" min="0" max="30" value="0" class="slider" id="beakSlide">
+    <br>
+    Eyes: <input type="range" min="0" max="100" value="0" class="slider" id="eyeSlide">
+    </p>
+    
+    <p>
+      Camera Angle: <input type="range" min="0" max="360" value="45" class="slider" id="angleSlide">
+    </p>
+
+    <p>Animation:
+      <button type="button" id="animationOn">ON</button>
+      <button type="button" id="animationOff">OFF</button>
+    </p>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="asg2.js"></script>
+  </body>
+</html>
