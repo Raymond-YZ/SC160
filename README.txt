@@ -1,4 +1,4 @@
-These projects are developed from taking CSE 160 at UC Santa Cruz.
+These projects are developed from taking CSE 160 at UC Santa Cruz: Introduction to Computer Graphics
 Languages used: HTML, CSS, JavaScript, WebGL, Three.js library
 All models used in Assignment/Lab5 are provided by poly.google.com
 
